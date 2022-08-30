@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container
+{
+    width: 100%;
+    height: 100vh;   /* display fill */
+    background-color: rgba(175, 243, 115, 0.993);   /* display background color */
+}
+ul{
+    position: absolute;
+    top: 5%;     /* position for ul */
+    right: 5%;
+}
+ul li{
+    list-style: none;
+    display:inline-block; /* list style change example for inline - block */
+    margin-right: 50px;
+}
+ul li a{
+    text-decoration: none; /* remove under line i text */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* this line is change font family */
+    font-weight: 600; /* this line is font text blod */
+    color:black; /* this line is font color change */
+}
+.thumbnail{
+    padding-top: 7%; /* bike image move to left */
+}
+.thumbnail li{
+    list-style: none;
+    position: relative;
+    margin-top: 50px;
+}
+.thumbnail img{
+    display:block;
+    max-width: 120px; /* this line image size */
+    transition: 0.5s;
+}
+.thumbnail img:hover{
+    transform:translateX(30px);  /* this line image style movement */
+    transition: 0.5s; /* slow move in bike */
+}
+.big-img img{
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    max-width: 500px;
+    max-height: 300px;
+}
+.content{
+    position: absolute;
+    cursor: pointer;
+    max-width: 40%;
+    right: 1%;
+    top: 20%;
+}
+.content p{
+    color:black;
+    font-size: 20px;
+    font-weight: 700;
+    font-family:cursive;
+    margin-left: 16%;
+}
+.content h1{
+    font-size: 30px;
+    font-weight: 400;
+    font-family: fantasy;
+    color:black;
+    text-shadow: 5px 5px 2px rgb(252, 224, 8);
+}
+.content h5{
+    font-size: 22px;
+    font-weight: blod;
+    color: black;
+    font-family: sans-serif;
+    text-shadow: 1px 1px 1px black;
+    text-transform:uppercase;
+    margin-left: 10%;
+}
+.path{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: #e5e5e5;
+    clip-path: circle(520px at left 300px);
+}

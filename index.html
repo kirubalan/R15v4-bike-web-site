@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="1jpg.jpg">
+    <title>by kiruba</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="path"></div>
+        <ul>
+            <li><a href="#"">Home</a></li>
+        <li><a href=" #"">Services</a></li>
+            <li><a href="#"">Contact</a></li>
+        <li><a href=" #"">About Us</a></li>
+        </ul>
+        <div class="thumbnail">
+            <li><img src="bike1.png" onclick="big('bike1.png');path('#b22222');bg('#ff9999')"></li>
+            <li><img src="bike2.png" onclick="big('bike2.png');path('#00008b');bg('#93ccea')"></li>
+            <li><img src="bike3.png" onclick="big('bike3.png');path('#d3d3d3');bg('#808080')"></li>
+        </div>
+        <div class="big-img">
+            <img src="bike3.png" class="big">
+        </div>
+        <div class="content">
+            <p>&#x1F525;Biker heaven, Free road, Full tank, Full throttle.&#x1F525;</p><br>
+            . <h1>Best Yamaha Quotes “I’d just as soon be on a good Steinway or Yamaha just as well.”</h1><br><br>
+            <h5>On a bike no one ever asks, “Are we there yet"</h5>
+            <h2>follow on instagram</h2>
+
+            <pre>The image below is a link. Try to click on it.</pre>
+
+            <a href="https://www.instagram.com/imperial_red_/"><img src="insta.png" alt="imperial_red_" style="width:42px;height:42px;"></a>
+
+        </div>
+    </div>
+</body>
+<script>
+    function big(img) {
+        document.querySelector('.big').src = img;
+    }
+    function path(color) {
+        const path = document.querySelector('.path');
+        path.style.background = color;
+    }
+    function bg(background) {
+        const bg = document.querySelector('.container');
+        bg.style.background = background;
+    }
+</script>
+
+</html>
